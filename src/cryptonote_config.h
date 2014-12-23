@@ -58,16 +58,15 @@ const size_t   UPGRADE_WINDOW                                = EXPECTED_NUMBER_O
 static_assert(0 < UPGRADE_VOTING_THRESHOLD && UPGRADE_VOTING_THRESHOLD <= 100, "Bad UPGRADE_VOTING_THRESHOLD");
 static_assert(UPGRADE_VOTING_WINDOW > 1, "Bad UPGRADE_VOTING_WINDOW");
 
-const char     CRYPTONOTE_BLOCKCHAINDATA_FILENAME[]          = "blockchain.bin";    // Obsolete blockchain format
-const char     CRYPTONOTE_BLOCKS_FILENAME[]                  = "blocks.dat";
-const char     CRYPTONOTE_BLOCKINDEXES_FILENAME[]            = "blockindexes.dat";
-const char     CRYPTONOTE_BLOCKSCACHE_FILENAME[]             = "blockscache.dat";
-const char     CRYPTONOTE_POOLDATA_FILENAME[]                = "poolstate.bin";
-const char     P2P_NET_DATA_FILENAME[]                       = "p2pstate.bin";
-const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json";
+//TODO Put here the name of your currency
+#define CRYPTONOTE_NAME                         "platinumnote
+#define CRYPTONOTE_BLOCKS_FILENAME              "blocks.dat"
+#define CRYPTONOTE_BLOCKINDEXES_FILENAME        "blockindexes.dat"
+#define CRYPTONOTE_BLOCKSCACHE_FILENAME         "blockscache.dat"
+#define CRYPTONOTE_POOLDATA_FILENAME            "poolstate.bin"
+#define P2P_NET_DATA_FILENAME                   "p2pstate.bin"
+#define MINER_CONFIG_FILE_NAME                  "miner_conf.json"
 } // parameters
-
-const char     CRYPTONOTE_NAME[]                             = "platinumnote";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
